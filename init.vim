@@ -41,6 +41,9 @@ set pastetoggle=<F2>
 " highlight search
 set hlsearch
 
+" cursorline
+set cursorline
+
 " leader key
 let mapleader=','
 
