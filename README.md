@@ -79,7 +79,12 @@ nvim ~/.config/nvim/init.vim
 PlugInstall	# You may try more than one time in China or in Chinese vps when you get error during installation.
 ```
 
-### 3. Plugin introduce
+### 3. NCM2 Requirements
+
+* `:echo has("nvim-0.2.2")` prints 1. Older versions has not been tested
+* `:echo has("python3")` prints 1. This is usually set by `python3 -m pip install pynvim` in shell and `let g:python3_host_prog=/path/to/python/executable/` in vimrc.
+
+### 4. Plugin introduce
 
 * [nerdtree](https://github.com/preservim/nerdtree): The NERDTree is a file system explorer for the Vim editor. 
 * [vim-startify](https://github.com/mhinz/vim-startify): This plugin provides a start screen for Vim and Neovim.
@@ -93,7 +98,7 @@ PlugInstall	# You may try more than one time in China or in Chinese vps when you
 * [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes): This is the official theme repository for [vim-airline](https://github.com/vim-airline/vim-airline)
 * [vim-hybrid](https://github.com/w0ng/vim-hybrid): A dark colour scheme for Vim.
 
-### 4. Key feature
+### 5. Key feature
 
 1. `<leader>w` to quick save, which means `,w` to quick save
 2. jj to escape insert mode
