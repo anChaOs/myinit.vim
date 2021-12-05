@@ -83,6 +83,7 @@ PlugInstall	# You may try more than one time in China or in Chinese vps when you
 
 * `:echo has("nvim-0.2.2")` prints 1. Older versions has not been tested
 * `:echo has("python3")` prints 1. This is usually set by `python3 -m pip install pynvim` in shell and `let g:python3_host_prog=/path/to/python/executable/` in vimrc.
+* `python3 -m pip install jedi`
 
 ### 4. Plugin introduce
 
