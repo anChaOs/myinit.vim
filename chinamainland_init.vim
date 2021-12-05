@@ -7,28 +7,28 @@ filetype off
 call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
 
 " Make sure you use single quotes
-Plug 'preservim/nerdtree'
-Plug 'mhinz/vim-startify'
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-Plug 'Yggdroot/indentLine'
-Plug 'easymotion/vim-easymotion'
-Plug 'tpope/vim-surround'
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
-Plug 'ncm2/ncm2-jedi'		" python completion
-Plug 'ncm2/ncm2-bufword'	" words in current buffer for completion
-Plug 'ncm2/ncm2-path'		" completion of path relative to(1.current openning buffer; 2.current working directory; 3.root directory) 
-Plug 'drmingdrmer/xptemplate'
+Plug 'https://gitee.com/anchaos/nerdtree.git'
+Plug 'https://gitee.com/anchaos/vim-startify.git'
+Plug 'https://gitee.com/anchaos/vim-fugitive.git'
+Plug 'https://gitee.com/anchaos/vim-gitgutter.git'
+Plug 'https://gitee.com/anchaos/indentLine.git'
+Plug 'https://gitee.com/anchaos/vim-easymotion.git'
+Plug 'https://gitee.com/anchaos/vim-surround.git'
+Plug 'https://gitee.com/anchaos/ncm2.git'
+Plug 'https://gitee.com/anchaos/nvim-yarp.git'
+Plug 'https://gitee.com/anchaos/ncm2-jedi.git'          " python completion
+Plug 'https://gitee.com/anchaos/ncm2-bufword.git'       " words in current buffer for completion
+Plug 'https://gitee.com/anchaos/ncm2-path.git'          " completion of path relative to(1.current openning buffer; 2.current working directory; 3.root directory)
+Plug 'https://gitee.com/anchaos/xptemplate.git'
 
 " status line
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'https://gitee.com/anchaos/vim-airline.git'
+Plug 'https://gitee.com/anchaos/vim-airline-themes.git'
 
 " color-scheme
-Plug 'w0ng/vim-hybrid'
-Plug 'tomasr/molokai'
-Plug 'morhetz/gruvbox'
+Plug 'https://gitee.com/anchaos/vim-hybrid.git'
+Plug 'https://gitee.com/anchaos/molokai.git'
+Plug 'https://gitee.com/anchaos/gruvbox.git'
 
 " Initialize plugin system
 call plug#end()
@@ -65,7 +65,6 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
-" python intend
 au BufNewFile,BufRead *.py
     \ set tabstop=4     |
     \ set softtabstop=4 |
@@ -94,14 +93,11 @@ let NERDTreeIgnore = [
                     \ ]
 
 " indentLine
-" let g:indentLine_fileType = ['python', 'golang', 'txt']
+" let g:indentLine_fileType = ['python', 'golang']
 let g:indentLine_color_term = 239
-let g:indentLine_char = '|'
-" let g:indentLine_char = '⎸'
-" let g:indentLine_char = '▏'
-" let g:indentLine_char = '│'
-let g:indentLine_leadingSpaceChar = '·'
 let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = '·'
+let g:indentLine_char = '|'
 
 " easymotion
 nmap ss <Plug>(easymotion-s2)
